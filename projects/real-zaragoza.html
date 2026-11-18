@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Propuesta de fichajes para el mercado de verano del Real Zaragoza">
+<title>Real Zaragoza: mercado de verano | Lou DataLab</title>
+<link rel="icon" type="image/png" href="../assets/logo.png"><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../project.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../index.html#inicio" aria-label="Lou DataLab, inicio"><img src="../assets/logo.png" alt="Logo de Lou DataLab"><span>Lou <strong>DataLab</strong></span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
+  <nav class="main-nav" id="main-nav" aria-label="Navegación principal"><a class="nav-link" href="../index.html#inicio">Inicio</a><a class="nav-link active" href="../index.html#proyectos">Proyectos</a><a class="nav-link" href="../index.html#contacto">Contacto</a></nav>
+</header>
+<main class="project-page">
+  <a class="back" href="../index.html#proyectos">← Volver a proyectos</a>
+  <p class="eyebrow">PROYECTO 02 · SCOUTING · PYTHON · EXCEL</p>
+  <h1>Real Zaragoza: propuesta de mercado de verano</h1>
+  <p class="intro">Proyecto que combina scouting y análisis para proponer opciones de fichaje en el mercado de verano del Real Zaragoza, presentado como una memoria en diapositivas con gráficos propios.</p>
+  <div class="tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Excel</span><span>PowerPoint</span></div>
+
+  <div class="facts">
+    <div><small>TEMPORADA</small><strong>2025/26</strong></div>
+    <div><small>ENFOQUE</small><strong>Scouting y planificación</strong></div>
+    <div><small>FUENTES</small><strong>FBref · Fotmob · Sofascore · Transfermarkt</strong></div>
+  </div>
+
+  <h2>Planteamiento</h2>
+  <ul>
+    <li><strong>Contexto:</strong> situación actual del equipo con algo de perspectiva sobre las temporadas anteriores.</li>
+    <li><strong>Necesidades:</strong> posiciones y roles que reforzaría, y en qué países y ligas centrar la búsqueda.</li>
+    <li><strong>Candidatos:</strong> un resumen de todos los perfiles propuestos y después un análisis detallado de cada uno.</li>
+  </ul>
+
+  <h2>Contexto: la temporada 24/25</h2>
+  <figure class="figure"><img src="../assets/img/rz-output.png" alt="Gráfico de líneas con la posición del Real Zaragoza por jornada en 22/23, 23/24 y 24/25; en 24/25 el equipo termina en torno al puesto 18" loading="lazy"><figcaption>Posición por jornada en las tres últimas temporadas, reutilizando el <a href="week-to-week.html">proyecto de rendimiento jornada a jornada</a>.</figcaption></figure>
+  <p>La 24/25 empieza en la parte alta pero cae a la zona de descenso a partir de la jornada 29. Este punto de partida justifica la necesidad de reforzar la plantilla.</p>
+
+  <h2>Análisis de candidatos</h2>
+  <p>Para cada jugador propuesto se revisan sus percentiles respecto a jugadores de su misma posición, junto con gráficos propios elaborados en Python a partir de datos de FBref. Entre los perfiles analizados están Thom Haye, Patrik Mercado, Lucas Esquivel, Santiago Cáseres o Jhoan Hernández.</p>
+  <figure class="figure narrow"><img src="../assets/img/rz-Thom-Haye.png" alt="Radar de percentiles de Thom Haye frente a centrocampistas, con métricas de ataque, posesión y defensa" loading="lazy"><figcaption>Ejemplo de radar de percentiles usado en la memoria. Gráfico: FBCharts · Datos: Opta/FBref.</figcaption></figure>
+
+  <h2>Entregables</h2>
+  <p>El repositorio incluye la presentación en PowerPoint, la carpeta de imágenes y el notebook con el que se generan los gráficos. También se puede descargar un .zip con la presentación y todas las imágenes.</p>
+
+  <div class="actions"><a class="button primary" href="https://github.com/loudatalab/RealZaragozaSummerSetup" target="_blank" rel="noreferrer">Ver repositorio en GitHub ↗</a><a class="button secondary" href="../index.html#proyectos">Otros proyectos</a></div>
+</main>
+<footer class="footer">
+  <a class="footer-brand" href="../index.html"><img src="../assets/logo.png" alt=""><span>Lou <strong>DataLab</strong></span></a>
+  <p>Portfolio personal de análisis de datos, estadística y fútbol.</p>
+  <nav aria-label="Enlaces rápidos"><a href="../index.html#inicio">Inicio</a><a href="../index.html#proyectos">Proyectos</a><a href="../index.html#contacto">Contacto</a><a href="mailto:igna.lou@gmail.com">Email ↗</a><a href="https://github.com/loudatalab" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
+  <small>© <span id="year">2026</span> Lou DataLab</small>
+</footer>
+<script src="../script.js"></script>
+</body></html>

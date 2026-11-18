@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lou DataLab: portfolio de análisis de datos aplicados al fútbol">
+<title>Lou DataLab | Football & Data</title>
+<link rel="icon" type="image/png" href="assets/logo.png"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html#inicio" aria-label="Lou DataLab, inicio"><img src="assets/logo.png" alt="Logo de Lou DataLab"><span>Lou <strong>DataLab</strong></span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
+  <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+    <a class="nav-link active" href="#inicio">Inicio</a><a class="nav-link" href="#proyectos">Proyectos</a><a class="nav-link" href="#contacto">Contacto</a>
+  </nav>
+</header>
+<main>
+<section class="hero page-section" id="inicio">
+  <div>
+    <p class="eyebrow"><span></span> DATA · STATS · FOOTBALL</p>
+    <h1>Lou DataLab<span>.</span></h1>
+    <h2 class="subtitle">Analítica de fútbol, estadística y visualización de datos.</h2>
+    <p class="intro">Aquí podrás encontrar los diferentes proyectos que he realizado tanto en mi formación académica como en mi tiempo libre, enfocados principalmente en el fútbol.</p>
+    <div class="actions"><a class="button primary" href="#proyectos">Explorar proyectos ↗</a><a class="button secondary" href="#contacto">Contactar</a></div>
+    <p class="micro"><i></i> Análisis de rendimiento · Scouting · Football Manager</p>
+  </div>
+  <div class="hero-art" aria-label="Imagen campo visual branding">
+    <div class="art-label"><span>LOU DATALAB</span><span>Los datos también juegan.</span></div>
+    <div class="pitch"><i class="mid"></i><i class="circle"></i><i class="box left"></i><i class="box right"></i>
+      <svg viewBox="0 0 500 300" aria-hidden="true"><path d="M80 235 L250 178 L425 60 M155 90 L315 45 L398 148"/></svg>
+      <i class="dot d1"></i><i class="dot d2"></i><i class="dot d3"></i><i class="dot d4"></i><i class="dot d5"></i><i class="dot d6"></i>
+    </div>
+    <div class="art-label art-bottom"><span>OBSERVAR</span><span>ANALIZAR</span><span>ENTENDER</span></div>
+    <div class="stamp"><b>LDL.</b><span>DATA MEETS<br>FOOTBALL</span></div>
+  </div>
+</section>
+<section class="projects page-section" id="proyectos">
+  <div class="section-head"><div><p class="eyebrow">REPOSITORIO DE TRABAJO</p><h2>Proyectos</h2></div><p>Todos los proyectos son elaborados por mí y están publicados en mi GitHub, donde se puede acceder libremente al código.</p></div>
+  <div class="toolbar"><span class="published"><i></i> PROYECTOS PUBLICADOS</span><div class="filters" role="group" aria-label="Filtrar por categoría">
+    <button class="filter active" data-filter="Todos" aria-pressed="true">Todos</button><button class="filter" data-filter="Python" aria-pressed="false">Python</button><button class="filter" data-filter="Excel" aria-pressed="false">Excel</button><button class="filter" data-filter="Scouting" aria-pressed="false">Scouting</button><button class="filter" data-filter="Rendimiento" aria-pressed="false">Rendimiento</button>
+  </div></div>
+  <div class="project-list">
+    <article class="project-row" data-tools="Python, Rendimiento"><span class="number">01</span><div><p class="kicker">RENDIMIENTO · PYTHON</p><h3><a href="projects/week-to-week.html">Rendimiento jornada a jornada</a></h3><p>Evolución de la posición y los puntos de un equipo a lo largo de la temporada, comparada con temporadas anteriores. Datos de Sofascore y Fotmob.</p><div class="tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span></div></div><a class="arrow" href="projects/week-to-week.html" aria-label="Abrir proyecto Rendimiento jornada a jornada">↗</a></article>
+    <article class="project-row" data-tools="Python, Excel, Scouting"><span class="number">02</span><div><p class="kicker">SCOUTING · PYTHON · EXCEL</p><h3><a href="projects/real-zaragoza.html">Real Zaragoza: propuesta de mercado de verano</a></h3><p>Diagnóstico de la plantilla, posiciones a reforzar y candidatos concretos para el mercado de verano, presentados en una memoria con gráficos propios.</p><div class="tags"><span>Python</span><span>Excel</span><span>FBref</span><span>Transfermarkt</span></div></div><a class="arrow" href="projects/real-zaragoza.html" aria-label="Abrir proyecto Real Zaragoza">↗</a></article>
+    <article class="project-row" data-tools="Python, Scouting"><span class="number">03</span><div><p class="kicker">SCOUTING · PYTHON</p><h3><a href="projects/fm-data-analysis.html">Football Manager Data Analysis</a></h3><p>Procesado de datos exportados de Football Manager para puntuar a jugadores por rol según sus atributos clave y apoyar fichajes o la gestión de la plantilla.</p><div class="tags"><span>Python</span><span>Pandas</span><span>Football Manager</span></div></div><a class="arrow" href="projects/fm-data-analysis.html" aria-label="Abrir proyecto Football Manager Data Analysis">↗</a></article>
+  </div>
+</section>
+<section class="contact page-section" id="contacto">
+  <div><p class="eyebrow">SOBRE MÍ / CONTACTO</p><h2>Datos con contexto.<br><span>Fútbol con evidencia.</span></h2></div>
+  <div class="contact-copy"><p>Mi nombre es Ignacio y he creado este espacio para compartir mi evolución y aprendizaje en el mundo del análisis de datos. Aquí subiré mis proyectos de análisis de datos y estadística, principalmente aplicados al fútbol: análisis de partidos, estudios de ligas, rendimiento de jugadores o proyectos de scouting.</p><p>Puedes consultar el código de los proyectos y contactar conmigo a través de estos canales. Encantado de dialogar y compartir opiniones. Si quieres colaborar en algún proyecto, no dudes en enviarme tu propuesta.</p>
+    <div class="contact-list">
+      <a href="mailto:igna.lou@gmail.com"><b>@</b><span><small>EMAIL</small><strong>Escríbeme</strong></span><i>↗</i></a>
+      <a href="https://bsky.app/profile/loudatalab.bsky.social" target="_blank" rel="noreferrer"><b>↗</b><span><small>BLUESKY</small><strong>Perfil de Bluesky</strong></span><i>↗</i></a>
+      <a href="https://github.com/loudatalab" target="_blank" rel="noreferrer"><b>⌘</b><span><small>GITHUB</small><strong>Repositorios y código</strong></span><i>↗</i></a>
+      <a href="https://www.linkedin.com/in/ignacio-lou-moles/" target="_blank" rel="noreferrer"><b>in</b><span><small>LINKEDIN</small><strong>Perfil profesional</strong></span><i>↗</i></a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <a class="footer-brand" href="#inicio"><img src="assets/logo.png" alt=""><span>Lou <strong>DataLab</strong></span></a>
+  <p>Portfolio personal de análisis de datos, estadística y fútbol.</p>
+  <nav aria-label="Enlaces rápidos"><a href="#inicio">Inicio</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a><a href="mailto:igna.lou@gmail.com">Email ↗</a><a href="https://github.com/loudatalab" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
+  <small>© <span id="year">2026</span> Lou DataLab</small>
+</footer>
+<script src="script.js"></script>
+</body></html>

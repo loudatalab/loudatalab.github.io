@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Análisis del rendimiento de un equipo jornada a jornada con Python">
+<title>Rendimiento jornada a jornada | Lou DataLab</title>
+<link rel="icon" type="image/png" href="../assets/logo.png"><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../project.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../index.html#inicio" aria-label="Lou DataLab, inicio"><img src="../assets/logo.png" alt="Logo de Lou DataLab"><span>Lou <strong>DataLab</strong></span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
+  <nav class="main-nav" id="main-nav" aria-label="Navegación principal"><a class="nav-link" href="../index.html#inicio">Inicio</a><a class="nav-link active" href="../index.html#proyectos">Proyectos</a><a class="nav-link" href="../index.html#contacto">Contacto</a></nav>
+</header>
+<main class="project-page">
+  <a class="back" href="../index.html#proyectos">← Volver a proyectos</a>
+  <p class="eyebrow">PROYECTO 01 · RENDIMIENTO · PYTHON</p>
+  <h1>Rendimiento jornada a jornada</h1>
+  <p class="intro">Análisis del rendimiento de un equipo a lo largo de la temporada, jornada a jornada, para ver cómo evoluciona y compararlo con temporadas anteriores. El caso de estudio es el Real Zaragoza en LaLiga Hypermotion.</p>
+  <div class="tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Jupyter</span><span>Web scraping</span></div>
+
+  <div class="facts">
+    <div><small>EQUIPO</small><strong>Real Zaragoza</strong></div>
+    <div><small>TEMPORADAS</small><strong>22/23 · 23/24 · 24/25</strong></div>
+    <div><small>FUENTES</small><strong>Sofascore · Fotmob</strong></div>
+  </div>
+
+  <h2>Objetivo</h2>
+  <p>Visualizar en qué momento de la temporada un equipo gana o pierde terreno: su posición en la clasificación y los puntos acumulados en cada jornada, superponiendo varias temporadas para comparar trayectorias.</p>
+
+  <h2>Datos y metodología</h2>
+  <ul>
+    <li><strong>Obtención:</strong> datos recogidos de Sofascore y Fotmob mediante scraping.</li>
+    <li><strong>Limpieza:</strong> construcción de dataframes con Pandas y adaptación de los datos al formato jornada a jornada.</li>
+    <li><strong>Automatización:</strong> funciones propias que encapsulan la creación y limpieza de los dataframes, de modo que el proceso se puede repetir con otros equipos o competiciones.</li>
+    <li><strong>Visualización:</strong> gráficos de líneas con Matplotlib y Seaborn. En la versión <code>.py</code> se añade una leyenda interactiva para mostrar u ocultar cada temporada (idea sugerida por Liam Whyte, Football Data &amp; Performance Analyst).</li>
+  </ul>
+
+  <h2>Resultados</h2>
+  <figure class="figure"><img src="../assets/img/w2w-1.png" alt="Gráfico de líneas con la posición del Real Zaragoza en cada jornada de las temporadas 22/23, 23/24 y 24/25" loading="lazy"><figcaption>Posición en la clasificación por jornada.</figcaption></figure>
+  <p>En 23/24 y 24/25 el equipo arranca en puestos altos y se desploma a partir de la jornada 10–15, mientras que en 22/23 pasa casi toda la temporada en la zona baja y remonta al final.</p>
+  <figure class="figure"><img src="../assets/img/w2w-2.png" alt="Gráfico de líneas con los puntos acumulados por jornada del Real Zaragoza en tres temporadas" loading="lazy"><figcaption>Puntos acumulados por jornada.</figcaption></figure>
+  <p>En puntos acumulados las tres temporadas convergen hacia la mitad del campeonato: la diferencia está en el ritmo de inicio, no en el total.</p>
+
+  <h2>Próximos pasos</h2>
+  <p>La estructura se puede reutilizar para comparar distintos equipos en una misma competición. La siguiente mejora es una función que automatice el scraping y genere los dataframes de todos los equipos de una competición y temporada.</p>
+
+  <div class="actions"><a class="button primary" href="https://github.com/loudatalab/week_to_week_team_analysis" target="_blank" rel="noreferrer">Ver repositorio en GitHub ↗</a><a class="button secondary" href="../index.html#proyectos">Otros proyectos</a></div>
+</main>
+<footer class="footer">
+  <a class="footer-brand" href="../index.html"><img src="../assets/logo.png" alt=""><span>Lou <strong>DataLab</strong></span></a>
+  <p>Portfolio personal de análisis de datos, estadística y fútbol.</p>
+  <nav aria-label="Enlaces rápidos"><a href="../index.html#inicio">Inicio</a><a href="../index.html#proyectos">Proyectos</a><a href="../index.html#contacto">Contacto</a><a href="mailto:igna.lou@gmail.com">Email ↗</a><a href="https://github.com/loudatalab" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
+  <small>© <span id="year">2026</span> Lou DataLab</small>
+</footer>
+<script src="../script.js"></script>
+</body></html>

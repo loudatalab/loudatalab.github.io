@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Análisis de datos de Football Manager con Python para scouting y gestión de plantilla">
+<title>Football Manager Data Analysis | Lou DataLab</title>
+<link rel="icon" type="image/png" href="../assets/logo.png"><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../project.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../index.html#inicio" aria-label="Lou DataLab, inicio"><img src="../assets/logo.png" alt="Logo de Lou DataLab"><span>Lou <strong>DataLab</strong></span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
+  <nav class="main-nav" id="main-nav" aria-label="Navegación principal"><a class="nav-link" href="../index.html#inicio">Inicio</a><a class="nav-link active" href="../index.html#proyectos">Proyectos</a><a class="nav-link" href="../index.html#contacto">Contacto</a></nav>
+</header>
+<main class="project-page">
+  <a class="back" href="../index.html#proyectos">← Volver a proyectos</a>
+  <p class="eyebrow">PROYECTO 03 · SCOUTING · PYTHON</p>
+  <h1>Football Manager Data Analysis</h1>
+  <p class="intro">Procesado de datos de Football Manager con Python para analizar posibles fichajes o la plantilla actual, puntuando a cada jugador según los atributos que más importan en cada rol.</p>
+  <div class="tags"><span>Python</span><span>Pandas</span><span>BeautifulSoup</span><span>Football Manager</span></div>
+
+  <div class="facts">
+    <div><small>ORIGEN DE LOS DATOS</small><strong>Exportaciones HTML de FM</strong></div>
+    <div><small>ENFOQUE</small><strong>Scouting por roles</strong></div>
+    <div><small>ESTADO</small><strong>En desarrollo</strong></div>
+  </div>
+
+  <h2>Objetivo</h2>
+  <p>Llevar al juego un proceso de scouting basado en datos: en lugar de revisar a los jugadores uno a uno, generar rankings por rol a partir de la lista de jugadores ojeados.</p>
+
+  <h2>Metodología</h2>
+  <ul>
+    <li><strong>Lectura de datos:</strong> la shortlist de jugadores ojeados se exporta desde Football Manager en HTML y se carga con Pandas.</li>
+    <li><strong>Atributos parcialmente ojeados:</strong> cuando el juego muestra un rango (por ejemplo «12-15») se usa el valor medio como estimación.</li>
+    <li><strong>Puntuaciones por rol:</strong> para cada rol (portero, portero líbero, carrilero…) se suma el valor de sus atributos clave y se ordena a los candidatos.</li>
+    <li><strong>«ADN» del jugador:</strong> una puntuación transversal con agresividad, determinación, juego en equipo y sacrificio, para valorar la mentalidad independientemente de la posición.</li>
+  </ul>
+
+  <h2>Próximos pasos</h2>
+  <p>Reorganizar el script en funciones reutilizables y construir una pequeña aplicación con interfaz para hacer el scouting directamente desde ella.</p>
+
+  <div class="actions"><a class="button primary" href="https://github.com/loudatalab/FM_Data_Analysis" target="_blank" rel="noreferrer">Ver repositorio en GitHub ↗</a><a class="button secondary" href="../index.html#proyectos">Otros proyectos</a></div>
+</main>
+<footer class="footer">
+  <a class="footer-brand" href="../index.html"><img src="../assets/logo.png" alt=""><span>Lou <strong>DataLab</strong></span></a>
+  <p>Portfolio personal de análisis de datos, estadística y fútbol.</p>
+  <nav aria-label="Enlaces rápidos"><a href="../index.html#inicio">Inicio</a><a href="../index.html#proyectos">Proyectos</a><a href="../index.html#contacto">Contacto</a><a href="mailto:igna.lou@gmail.com">Email ↗</a><a href="https://github.com/loudatalab" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
+  <small>© <span id="year">2026</span> Lou DataLab</small>
+</footer>
+<script src="../script.js"></script>
+</body></html>
